@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Головна</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<div class="navbar-content">
+    <nav role="navigation">
+        <div id="menuToggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Профіль</a></li>
+                <li><a href="#">Квитки</a></li>
+                <li><a href="#">Вийти</a></li>
+                <li><a href="login.html">Вхід</a></li>
+            </ul>
+
+        </div>
+
+        <a href="index.html" class="logo">
+            <img src="static/img/logo.svg" alt="logo">
+        </a>
+
+    </nav>
+
+</div>
+
+<section class="carousel" aria-label="Gallery">
+    <ul class="carousel-viewport">
+        <li id="carousel-slide1"
+            tabindex="0"
+            class="carousel-slide">
+            <div class="carousel-snapper">
+                <a  href="newpage.html" class="carousel-link">
+                    <img src="static/img/banner_wrath_of_man.jpg" alt="pic1">
+                </a>
+                <a href="#carousel-slide4"
+                   class="carousel-prev">Go to last slide</a>
+                <a href="#carousel-slide2"
+                   class="carousel-next">Go to next slide</a>
+            </div>
+        </li>
+        <li id="carousel-slide2"
+            tabindex="0"
+            class="carousel-slide">
+            <div class="carousel-snapper"></div>
+            <a  href="newpage.html" class="carousel-link">
+                <img src="static/img/banner_avengers.jpg" alt="pic2">
+            </a>
+            <a href="#carousel-slide1"
+               class="carousel-prev">Go to previous slide</a>
+            <a href="#carousel-slide3"
+               class="carousel-next">Go to next slide</a>
+        </li>
+        <li id="carousel-slide3"
+            tabindex="0"
+            class="carousel-slide">
+            <div class="carousel-snapper"></div>
+            <a  href="newpage.html" class="carousel-link">
+                <img src="static/img/banner_mortal_kombat.jfif" alt="pic3">
+            </a>
+            <a href="#carousel-slide2"
+               class="carousel-prev">Go to previous slide</a>
+            <a href="#carousel-slide4"
+               class="carousel-next">Go to next slide</a>
+        </li>
+        <li id="carousel-slide4"
+            tabindex="0"
+            class="carousel-slide">
+            <div class="carousel-snapper"></div>
+            <a  href="newpage.html" class="carousel-link">
+                <img src="static/img/banner_tenet.jpg" alt="pic4">
+            </a>
+            <a href="#carousel-slide3"
+               class="carousel-prev">Go to previous slide</a>
+            <a href="#carousel-slide1"
+               class="carousel-next">Go to first slide</a>
+        </li>
+    </ul>
+    <aside class="carousel-navigation">
+        <ul class="carousel-navigation-list">
+            <li class="carousel-navigation-item">
+                <a href="#carousel-slide1"
+                   class="carousel-navigation-button">Go to slide 1</a>
+            </li>
+            <li class="carousel-navigation-item">
+                <a href="#carousel-slide2"
+                   class="carousel-navigation-button">Go to slide 2</a>
+            </li>
+            <li class="carousel-navigation-item">
+                <a href="#carousel-slide3"
+                   class="carousel-navigation-button">Go to slide 3</a>
+            </li>
+            <li class="carousel-navigation-item">
+                <a href="#carousel-slide4"
+                   class="carousel-navigation-button">Go to slide 4</a>
+            </li>
+        </ul>
+    </aside>
+</section>
+
+<main>
+    <h1>У прокаті</h1>
+    <div class="row row-cols-4">
+        <div class="col-xxl-3 col-sm-6 col-12">
+            <div class="movie-plate">
+                <a href="#">
+                    <img src="static/img/poster_tenet.jpg" alt="poster_1">
+                    <div class="overlay">
+                        <div class="text">Тенет</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-sm-6 col-12">
+            <div class="movie-plate">
+                <a href="#">
+                    <img src="static/img/poster_wrath_of_man.jpg" alt="poster_2">
+                    <div class="overlay">
+                        <div class="text">Гнів людський</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-sm-6 col-12">
+            <div class="movie-plate">
+                <a href="#">
+                    <img src="static/img/poster_mortal_kombat.png" alt="poster_3">
+                    <div class="overlay">
+                        <div class="text">Смертельна битва</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-sm-6 col-12">
+            <div class="movie-plate">
+                <a href="#">
+                    <img src="static/img/poster_avengers.jpg" alt="poster_4">
+                    <div class="overlay">
+                        <div class="text">Месники: Фінал</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <h1>Скоро в кіно</h1>
+    <div class="row row-cols-4">
+        <div class="col-xxl-3 col-sm-6 col-12">
+            <div class="movie-plate">
+                <a href="#">
+                    <img src="static/img/poster_nobody.jpg" alt="poster_5">
+                    <div class="overlay">
+                        <div class="text">Ніхто</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-sm-6 col-12">
+            <div class="movie-plate">
+                <a href="#">
+                    <img src="static/img/poster_fast_and_furious.jpg" alt="poster_6">
+
+                <div class="overlay">
+                    <div class="text">Форсаж 9</div>
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-sm-6 col-12">
+            <div class="movie-plate">
+                <a href="#">
+                    <img src="static/img/poster_jungle_cruise.jpg" alt="poster_7">
+                <div class="overlay">
+                    <div class="text">Круїз у джунглях</div>
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-sm-6 col-12">
+            <div class="movie-plate">
+                <a href="#">
+                    <img src="static/img/poster_black_widow.jpg" alt="poster_8">
+                    <div class="overlay">
+                        <div class="text">Чорна Вдова</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer></footer>
+</body>
+</html>
