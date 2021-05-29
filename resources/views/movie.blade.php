@@ -5,22 +5,23 @@
 @endsection
 
 @section('main')
-
     <div class="movie-page">
         <div class="row row-cols-2">
             <div class="col-xxl-4 col-sm-12 col-12">
                 <img src="{{asset($movie[0]->img)}}" alt="poster">
-                <form method="get" action="{{route('getSeats')}}">
-                    @csrf
-                    <select name="session_id">
-                        @foreach($sessions as $session)
-                            <option value="{{$session->id}}">{{$session->date}}, {{$session->session_time}}</option>
-                        @endforeach
-                    </select>
-                    <button type="submit">
-                        <a>Купити квитки</a>
-                    </button>
-                </form>
+                @if(!$sessions->isEmpty())
+                    <form method="get" action="{{route('getSeats')}}">
+                        @csrf
+                        <select name="session_id">
+                            @foreach($sessions as $session)
+                                <option value="{{$session->id}}">{{$session->date}}, {{$session->session_time}}</option>
+                            @endforeach
+                        </select>
+                        <button type="submit">
+                            <a>Купити квитки</a>
+                        </button>
+                    </form>
+                @endif
             </div>
 
             <div class="col-xxl-8 col-sm-12 col-12">

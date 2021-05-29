@@ -14,10 +14,11 @@ class MovieController extends Controller
         return view('index', ['movies' => $movies]);
     }
 
-    public function movie($id) {
-        $movie = DB::table('movies')->where('id', $id)->get();
-        $sessions = DB::table('sessions')
-            ->join('times', 'sessions.time_id', '=', 'times.id')->where('movie_id', $id)
+    public function movie($movie_id) {
+        $movie = DB::table('movies')->where('id', $movie_id)->get();
+        $sessions = DB::table('times')
+            ->join('sessions', 'sessions.time_id', '=', 'times.id')
+            ->where('movie_id', $movie_id)
             ->get();
         return view('movie', ['movie' => $movie, 'sessions' => $sessions]);
     }

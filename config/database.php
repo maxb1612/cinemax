@@ -50,7 +50,7 @@ return [
             'port' => env('DB_PORT', '3307'),
             'database' => env('DB_DATABASE', 'cinemax_db'),
             'username' => env('DB_USERNAME', 'root'),
-            'password' => env('DB_PASSWORD', 'laravelwork'),
+            'password' => env('DB_PASSWORD', 'laravelwork`'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
